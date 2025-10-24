@@ -1,0 +1,71 @@
+/* Design System Tokens as CSS Variables */
+:root {
+  --blue: #3b82f6;
+  --purple: #8b5cf6;
+  --green: #10b981;
+  --white: #ffffff;
+  --gray-50: #f8fafc;
+}
+
+.button {
+  --bg-color: transparent;
+  --border-color: transparent;
+  --text-color: currentColor;
+  
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  outline: none;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+}
+
+.sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+.md { padding: 0.75rem 1.5rem; font-size: 1rem; }
+.lg { padding: 1rem 2rem; font-size: 1.125rem; }
+
+.primary {
+  --bg-color: var(--current-color);
+  --border-color: var(--current-color);
+  --text-color: var(--white);
+}
+
+.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.secondary {
+  --bg-color: var(--white);
+  --border-color: var(--current-color);
+  --text-color: var(--current-color);
+}
+
+.secondary:hover {
+  --bg-color: var(--gray-50);
+}
+
+.text {
+  --bg-color: transparent;
+  --border-color: transparent;
+  --text-color: var(--current-color);
+  border: none;
+  padding: 0.25rem 0.5rem !important;
+}
+
+.text:hover {
+  text-decoration: underline;
+  --bg-color: transparent;
+}
+
+.blue { --current-color: var(--blue); }
+.purple { --current-color: var(--purple); }
+.green { --current-color: var(--green); }
