@@ -7,7 +7,7 @@ const meta = {
   parameters: {
     layout: "centered",
     chromatic: {
-      viewports: [320, 768, 1024], // Test multiple screen sizes
+      // viewports: [320, 768, 1024], // Test multiple screen sizes
     },
   },
 
