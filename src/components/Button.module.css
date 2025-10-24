@@ -3,7 +3,7 @@
   --blue: #3b82f6;
   --purple: #8b5cf6;
   --green: #10b981;
-  --white: #f1e3e3;
+  --white: #ffffff;
   --gray-50: #f8fafc;
 }
 
@@ -15,7 +15,7 @@
   border: 2px solid var(--border-color);
   border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: bol;
   transition: all 0.2s ease;
   outline: none;
   font-family: inherit;
